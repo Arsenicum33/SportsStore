@@ -13,7 +13,6 @@ namespace SportsStore.Models
         {
             ApplicationDbContext context =
             services.GetRequiredService<ApplicationDbContext>();
-            //context.Database.Migrate();
             if (!context.Products.Any())
             {
                 context.Products.AddRange(

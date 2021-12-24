@@ -12,8 +12,6 @@ namespace SportsStore.Models
         public static async Task EnsurePopulated(UserManager<IdentityUser> userManager)
         {
 
-
-            //Resolve ASP .NET Core Identity with DI help
             IdentityUser user = await userManager.FindByIdAsync(adminUser);
             if (user == null)
             {

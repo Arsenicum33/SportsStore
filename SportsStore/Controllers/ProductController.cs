@@ -14,31 +14,6 @@ namespace SportsStore.Controllers
         }
         public ViewResult List(string category, int productPage = 1)
         {
-            /*return View(new ProductsListViewModel
-            {
-                Products = new System.Collections.Generic.List<Product>(),
-                Paginginfo = new Paginginfo
-                {
-                    CurrentPage = 0,
-                    ItemsPerPage = PageSize,
-                    TotalItems = 0
-                },
-                CurrentCategory = category
-            });*/
-            //if (repository.Products==null||repository.Products.Count()==0)
-            //{
-            //    return View(new ProductsListViewModel
-            //    {
-            //        Products = new System.Collections.Generic.List<Product>(),
-            //        Paginginfo = new Paginginfo
-            //        {
-            //            CurrentPage = 0,
-            //            ItemsPerPage = PageSize,
-            //            TotalItems=0
-            //        },
-            //        CurrentCategory=category
-            //    }) ;
-            //}
             return View(new ProductsListViewModel
             {
                 Products = repository.Products

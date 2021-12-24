@@ -31,7 +31,6 @@ namespace SportsStore.Controllers
             }
             else
             {
-                // Что-то не так co значениями данных
                 return View(product);
             }
         }
