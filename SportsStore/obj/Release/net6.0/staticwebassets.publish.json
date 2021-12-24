@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "oN8utloseV0mbq1R7xG3H0gycsKhEVEZwVkG08xJvh0=",
+  "Source": "SportsStore",
+  "BasePath": "_content/SportsStore",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SportsStore\\wwwroot",
+      "Source": "SportsStore",
+      "ContentRoot": "C:\\Users\\Арсений\\source\\repos\\SportsStore\\SportsStore\\wwwroot\\",
+      "BasePath": "_content/SportsStore",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

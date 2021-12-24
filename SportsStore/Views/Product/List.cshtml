@@ -1,0 +1,14 @@
+﻿@model ProductsListViewModel
+<head>
+    
+</head>
+@foreach (var p in Model.Products)
+{
+   @Html.Partial("ProductSummary", p, new ViewDataDictionary(ViewData)
+   {{"category", @Model.CurrentCategory}, {"productPage", @Model.Paginginfo.CurrentPage}})
+}
+<div page-model="@Model.Paginginfo" page-action="List" page-classes-enabled="true"
+     page-class="btn" page-class-normal="btn-secondary"
+     page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory"
+     class="btn-group pull-right m-l">
+</div>
